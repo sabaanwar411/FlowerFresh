@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		00E18D19E9CD0A0816809333 /* Pods_FlowerFresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEDEFBA69721EC4E4082D93 /* Pods_FlowerFresh.framework */; };
+		3D2542BBD43ABCDE8CA6368B /* Pods_FlowerFreshTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAA9354C40BD2FE671D2312 /* Pods_FlowerFreshTests.framework */; };
+		4B470C3B9B76D7AA324CB4C6 /* Pods_FlowerFresh_FlowerFreshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2F9771752BC6A83959325E /* Pods_FlowerFresh_FlowerFreshUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		16B214702E2684DD00436411 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,15 @@
 		16B2145F2E2684DB00436411 /* FlowerFresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerFresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B2146F2E2684DD00436411 /* FlowerFreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerFreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B214792E2684DD00436411 /* FlowerFreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerFreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		394C15646B46241634AB7B39 /* Pods-FlowerFreshTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFreshTests.release.xcconfig"; path = "Target Support Files/Pods-FlowerFreshTests/Pods-FlowerFreshTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C2F9771752BC6A83959325E /* Pods_FlowerFresh_FlowerFreshUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerFresh_FlowerFreshUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DD9C6A364F563B0ED9EC97 /* Pods-FlowerFresh-FlowerFreshUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFresh-FlowerFreshUITests.release.xcconfig"; path = "Target Support Files/Pods-FlowerFresh-FlowerFreshUITests/Pods-FlowerFresh-FlowerFreshUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AEDEFBA69721EC4E4082D93 /* Pods_FlowerFresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerFresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		944634DAC980E09E7BA58AEB /* Pods-FlowerFresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFresh.release.xcconfig"; path = "Target Support Files/Pods-FlowerFresh/Pods-FlowerFresh.release.xcconfig"; sourceTree = "<group>"; };
+		9663553E9BBAC0DBA9846FCE /* Pods-FlowerFreshTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFreshTests.debug.xcconfig"; path = "Target Support Files/Pods-FlowerFreshTests/Pods-FlowerFreshTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A08234DF41635BC8EF44B91C /* Pods-FlowerFresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFresh.debug.xcconfig"; path = "Target Support Files/Pods-FlowerFresh/Pods-FlowerFresh.debug.xcconfig"; sourceTree = "<group>"; };
+		B4550DFA6869587559A40288 /* Pods-FlowerFresh-FlowerFreshUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFresh-FlowerFreshUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlowerFresh-FlowerFreshUITests/Pods-FlowerFresh-FlowerFreshUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAAA9354C40BD2FE671D2312 /* Pods_FlowerFreshTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerFreshTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E18D19E9CD0A0816809333 /* Pods_FlowerFresh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2542BBD43ABCDE8CA6368B /* Pods_FlowerFreshTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B470C3B9B76D7AA324CB4C6 /* Pods_FlowerFresh_FlowerFreshUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,8 @@
 				16B214722E2684DD00436411 /* FlowerFreshTests */,
 				16B2147C2E2684DD00436411 /* FlowerFreshUITests */,
 				16B214602E2684DB00436411 /* Products */,
+				63C27C9C73C22362196B117B /* Pods */,
+				FA5668A5FE03D15DAFD0B4AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +112,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		63C27C9C73C22362196B117B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A08234DF41635BC8EF44B91C /* Pods-FlowerFresh.debug.xcconfig */,
+				944634DAC980E09E7BA58AEB /* Pods-FlowerFresh.release.xcconfig */,
+				B4550DFA6869587559A40288 /* Pods-FlowerFresh-FlowerFreshUITests.debug.xcconfig */,
+				79DD9C6A364F563B0ED9EC97 /* Pods-FlowerFresh-FlowerFreshUITests.release.xcconfig */,
+				9663553E9BBAC0DBA9846FCE /* Pods-FlowerFreshTests.debug.xcconfig */,
+				394C15646B46241634AB7B39 /* Pods-FlowerFreshTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA5668A5FE03D15DAFD0B4AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AEDEFBA69721EC4E4082D93 /* Pods_FlowerFresh.framework */,
+				3C2F9771752BC6A83959325E /* Pods_FlowerFresh_FlowerFreshUITests.framework */,
+				DAAA9354C40BD2FE671D2312 /* Pods_FlowerFreshTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16B214832E2684DD00436411 /* Build configuration list for PBXNativeTarget "FlowerFresh" */;
 			buildPhases = (
+				57FB0377DE11A16C1A24482A /* [CP] Check Pods Manifest.lock */,
 				16B2145B2E2684DB00436411 /* Sources */,
 				16B2145C2E2684DB00436411 /* Frameworks */,
 				16B2145D2E2684DB00436411 /* Resources */,
+				DB236F087CD4CD93C5D40C20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +156,6 @@
 				16B214612E2684DB00436411 /* FlowerFresh */,
 			);
 			name = FlowerFresh;
-			packageProductDependencies = (
-			);
 			productName = FlowerFresh;
 			productReference = 16B2145F2E2684DB00436411 /* FlowerFresh.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16B214862E2684DD00436411 /* Build configuration list for PBXNativeTarget "FlowerFreshTests" */;
 			buildPhases = (
+				34EA58585116CD6D4EE05A91 /* [CP] Check Pods Manifest.lock */,
 				16B2146B2E2684DD00436411 /* Sources */,
 				16B2146C2E2684DD00436411 /* Frameworks */,
 				16B2146D2E2684DD00436411 /* Resources */,
@@ -134,8 +178,6 @@
 				16B214722E2684DD00436411 /* FlowerFreshTests */,
 			);
 			name = FlowerFreshTests;
-			packageProductDependencies = (
-			);
 			productName = FlowerFreshTests;
 			productReference = 16B2146F2E2684DD00436411 /* FlowerFreshTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16B214892E2684DD00436411 /* Build configuration list for PBXNativeTarget "FlowerFreshUITests" */;
 			buildPhases = (
+				17C44E04BB258DD37453C21E /* [CP] Check Pods Manifest.lock */,
 				16B214752E2684DD00436411 /* Sources */,
 				16B214762E2684DD00436411 /* Frameworks */,
 				16B214772E2684DD00436411 /* Resources */,
+				8BB3DB227564B210D6B4BB1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,8 +201,6 @@
 				16B2147C2E2684DD00436411 /* FlowerFreshUITests */,
 			);
 			name = FlowerFreshUITests;
-			packageProductDependencies = (
-			);
 			productName = FlowerFreshUITests;
 			productReference = 16B214792E2684DD00436411 /* FlowerFreshUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +272,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17C44E04BB258DD37453C21E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerFresh-FlowerFreshUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34EA58585116CD6D4EE05A91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerFreshTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57FB0377DE11A16C1A24482A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlowerFresh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BB3DB227564B210D6B4BB1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowerFresh-FlowerFreshUITests/Pods-FlowerFresh-FlowerFreshUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowerFresh-FlowerFreshUITests/Pods-FlowerFresh-FlowerFreshUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlowerFresh-FlowerFreshUITests/Pods-FlowerFresh-FlowerFreshUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB236F087CD4CD93C5D40C20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowerFresh/Pods-FlowerFresh-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlowerFresh/Pods-FlowerFresh-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlowerFresh/Pods-FlowerFresh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16B2145B2E2684DB00436411 /* Sources */ = {
@@ -390,18 +535,23 @@
 		};
 		16B214842E2684DD00436411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08234DF41635BC8EF44B91C /* Pods-FlowerFresh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FlowerFresh/Preview Content\"";
-				DEVELOPMENT_TEAM = 2673G92C63;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FlowerFresh;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,6 +561,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = flowers.FlowerFresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,18 +574,23 @@
 		};
 		16B214852E2684DD00436411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944634DAC980E09E7BA58AEB /* Pods-FlowerFresh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FlowerFresh/Preview Content\"";
-				DEVELOPMENT_TEAM = 2673G92C63;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FlowerFresh;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +600,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = flowers.FlowerFresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +613,7 @@
 		};
 		16B214872E2684DD00436411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9663553E9BBAC0DBA9846FCE /* Pods-FlowerFreshTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -467,6 +633,7 @@
 		};
 		16B214882E2684DD00436411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394C15646B46241634AB7B39 /* Pods-FlowerFreshTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +653,7 @@
 		};
 		16B2148A2E2684DD00436411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4550DFA6869587559A40288 /* Pods-FlowerFresh-FlowerFreshUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -503,6 +671,7 @@
 		};
 		16B2148B2E2684DD00436411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DD9C6A364F563B0ED9EC97 /* Pods-FlowerFresh-FlowerFreshUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
