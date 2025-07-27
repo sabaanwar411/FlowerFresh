@@ -15,7 +15,7 @@ FlowerFresh is a SwiftUI-based iOS application that showcases a flower shop inte
 ## Screenshots
 | Flower Grid | Flower Detail |
 |-------------|---------------|
-| ![Grid View](https://github.com/FlowerFresh/screenshots/grid_view.png) | ![Detail View](https://github.com/FlowerFresh/screenshots/detail_view.png) |
+| ![Grid View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/grid_view.png) | ![Detail View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/detail_view.png) |
 
 ## Technologies Used
 - **SwiftUI**: For building a modern, declarative UI.
