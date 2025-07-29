@@ -12,7 +12,7 @@ class FlowerViewModel: ObservableObject {
     @Published private(set) var isLoading: Bool = false
     @Published private(set) var errorMessage: String?
     @Published private(set) var basket: [String: Int] = [:] // Flower ID: Quantity
-       
+    
     private let basketKey = "basketItems"
     private let favoritesKey = "favoriteFlowerIDs"
     private let service: FlowerService
@@ -20,7 +20,7 @@ class FlowerViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init(service: FlowerService = NetworkService()) {
-        self.service = service
+        self.service  = service
     }
     
     func fetchFlowers() {
@@ -39,6 +39,9 @@ class FlowerViewModel: ObservableObject {
             .store(in: &cancellables)
     }
     
+    func favoriteFlowers() -> [Flower] {
+        flowers.filter { isFavorite(flowerID: $0.id!) }
+        }
     func isFavorite(flowerID: String) -> Bool {
         let favoriteIDs = UserDefaults.standard.stringArray(forKey: favoritesKey) ?? []
         return favoriteIDs.contains(flowerID)
@@ -56,11 +59,15 @@ class FlowerViewModel: ObservableObject {
     }
     
     func addToBasket(flowerID: String, quantity: Int) {
-        guard quantity > 0, let flower = flowers.first(where: { $0.id == flowerID }), flower.availability >= quantity else { return }
+        guard quantity > 0, let flower = flowers.first(where: { $0.id == flowerID }), flower.availability >= quantity else {
+            Logger.shared.debug("Cannot add flower \(flowerID) to basket: Invalid quantity or unavailable", category: "Basket")
+            return
+        }
         var basket = self.basket
         basket[flowerID, default: 0] += quantity
         self.basket = basket
         saveBasket()
+        Logger.shared.debug("Added \(quantity) of flower \(flowerID) to basket", category: "Basket")
         objectWillChange.send()
     }
     
@@ -69,29 +76,35 @@ class FlowerViewModel: ObservableObject {
         basket.removeValue(forKey: flowerID)
         self.basket = basket
         saveBasket()
+        Logger.shared.debug("Removed flower \(flowerID) from basket", category: "Basket")
         objectWillChange.send()
     }
     
     func clearBasket() {
         basket = [:]
         saveBasket()
+        Logger.shared.debug("Cleared basket", category: "Basket")
         objectWillChange.send()
     }
     
     func basketTotal() -> Double {
-        flowers.reduce(0.0) { total, flower in
+        let total = flowers.reduce(0.0) { total, flower in
             guard let quantity = basket[flower.id!] else { return total }
             return total + flower.price * Double(quantity)
         }
+        Logger.shared.debug("Calculated basket total: $\(String(format: "%.2f", total))", category: "Basket")
+        return total
     }
     
     private func loadBasket() {
         if let savedBasket = UserDefaults.standard.dictionary(forKey: basketKey) as? [String: Int] {
             basket = savedBasket
+            Logger.shared.debug("Loaded basket with \(savedBasket.count) items", category: "Basket")
         }
     }
     
     private func saveBasket() {
         UserDefaults.standard.set(basket, forKey: basketKey)
+        Logger.shared.debug("Saved basket to UserDefaults", category: "Basket")
     }
 }

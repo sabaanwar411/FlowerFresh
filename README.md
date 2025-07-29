@@ -4,6 +4,9 @@ FlowerFresh is a SwiftUI-based iOS application that showcases a flower shop inte
 
 ## Features
 - **Dynamic Flower Grid**: Displays a two-column grid of flowers with name, price, availability, and favorite status, fetched from Firebase Firestore or a mock API.
+- **Bottom Tab Bar**: Home, Basket, and Favorites tabs.
+- **Basket Tab:** Shows all added basket items with quantities, total price, and options to remove items or clear the basket.
+- **Favorites Tab:** Displays all favorited flowers in a grid, persisted in UserDefaults.
 - **Interactive UI**: Smooth tap animations on flower cards using spring-based scaling.
 - **Detail View**: Navigation to a detailed view for each flower, showing a larger image, price, availability, and options to favorite or checkout.
 - **Local Favorites**: Favorite status is stored locally using `UserDefaults`, ensuring persistence across app sessions without backend storage.
@@ -13,9 +16,9 @@ FlowerFresh is a SwiftUI-based iOS application that showcases a flower shop inte
 - **Responsive Design**: Adapts to light and dark modes with a native iOS look using system colors.
 
 ## Screenshots
-| Flower Grid | Flower Detail |
-|-------------|---------------|
-| ![Grid View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/grid_view.png) | ![Detail View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/detail_view.png) |
+| Flower Grid | Flower Detail | Basket View   | Favourite View|
+|-------------|---------------|---------------|---------------|
+| ![Grid View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/screenshot1.png) | ![Detail View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/screenshot3.png) | ![Basket View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/screenshot2.png) | ![Favourite View](https://github.com/sabaanwar411/FlowerFresh/blob/main/screenshots/screenshot4.png) |
 
 ## Technologies Used
 - **SwiftUI**: For building a modern, declarative UI.

@@ -30,6 +30,7 @@ struct FlowerGridView: View {
                         }
                     }
                     .padding()
+                    Spacer(minLength: 20)
                 }
                 .navigationTitle("Flower Shop")
                 .background(Color(.systemGroupedBackground))
@@ -43,9 +44,4 @@ struct FlowerGridView_Previews: View {
     var body: some View {
         FlowerGridView(viewModel: FlowerViewModel(service: FirestoreService()))
     }
-}
-
-#Preview {
-    FlowerGridView(viewModel: FlowerViewModel(service: FirestoreService()))
-        .environment(\.colorScheme, .light)
 }

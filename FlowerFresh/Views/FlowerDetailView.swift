@@ -10,6 +10,7 @@ struct FlowerDetailView: View {
     let flower: Flower
     @ObservedObject var viewModel: FlowerViewModel
     @Environment(\.dismiss) var dismiss
+    @State private var quantity: Int = 1
     
     var body: some View {
         NavigationView{
@@ -49,18 +50,22 @@ struct FlowerDetailView: View {
                     .foregroundColor(.primary)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
-                
                 Button(action: {
-                    print("Proceeding to checkout for \(flower.name)")
-                }) {
-                    Text("Checkout")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.green.opacity(0.2))
-                        .foregroundColor(.primary)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                }
-                
+                                withAnimation(.easeInOut) {
+                                    viewModel.addToBasket(flowerID: flower.id!, quantity: quantity)
+                                    dismiss()
+                                }
+                            }) {
+                                HStack {
+                                    Image(systemName: "cart")
+                                    Text("Add to Basket")
+                                }
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.blue.opacity(0.2))
+                                    .foregroundColor(.primary)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                            }
                 Spacer()
             }
             .padding()

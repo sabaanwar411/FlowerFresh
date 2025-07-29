@@ -14,7 +14,7 @@ struct FlowerFreshApp: App {
     
     var body: some Scene {
         WindowGroup {
-            FlowerGridView(viewModel: FlowerViewModel(service: FirestoreService())) // Switch to NetworkService() if needed
+            MainTabView()
         }
     }
 }
