@@ -59,6 +59,7 @@ struct BasketView: View {
                 }
             }
             .navigationTitle("Basket")
+            .background(Color(.systemGroupedBackground))
             .onAppear {
                 Logger.shared.debug("Basket tab appeared", category: "UI")
             }
